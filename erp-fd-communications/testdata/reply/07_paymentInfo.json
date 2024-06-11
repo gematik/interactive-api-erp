@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "text": "Some Text to state your request",
+    "transactionId": "ABCD-EFGH-IJKL-MNOP",
+    "taskId": "160.000.000.000.000.00",
+    "communicationType": "paymentInfo",
+    "totalAmount": {
+        "value": 12530,
+        "currency": "EUR"
+    },
+    "paymentMethods": [
+        {
+            "method": "cash"
+        },
+        {
+            "method": "bankaccount",
+            "url": "https://my.payment.provider.de/pay/<payment_transaction_id>"
+        },
+        {
+            "method": "paypal",
+            "url": "https://paypal.me/<some_account>"
+        }
+    ]
+}

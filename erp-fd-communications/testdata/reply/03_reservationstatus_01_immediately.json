@@ -1,0 +1,7 @@
+{
+    "version": 3,
+    "transactionId": "ABCD-EFGH-IJKL-MNOP",
+    "taskId": "160.000.000.000.000.00",
+    "communicationType": "reservationStatus",
+    "readyForCollection": "immediately"
+}

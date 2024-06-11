@@ -1,0 +1,103 @@
+/**
+* Copyright 2024 gematik GmbH
+*  
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*  
+*     http://www.apache.org/licenses/LICENSE-2.0
+*  
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+html {
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  list-style-type: none; /* Add this line to remove the list indicator */
+}
+
+.tab-menu button, #root > button, .modal-container button {
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  padding: 10px 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.tab-menu button.active {
+  padding: 10px 20px 6px;
+  border-bottom: 4px solid #fff;
+}
+.tab-menu button.legal {
+  margin-left: 32px;
+  background-color: rgb(17, 81, 145);
+}
+
+.modal-container {
+  background: #fff;
+  padding: 16px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  font-size: 0.8em;
+  overflow-y: scroll;
+  height: 100%;
+
+}
+
+.modal-container .close-button {
+  background-color: rgb(131, 0, 0);
+}

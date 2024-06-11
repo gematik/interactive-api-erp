@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CommunicationDispReqPayload",
+    "title": "Payload of CommunicationDispReq",
+    "type": "object",
+    "oneOf": [
+        {
+            "title": "Delivery & Shipment",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "supplyOptionsType": { "enum": ["delivery", "shipment"] },
+                "name": {
+                    "type": "string",
+                    "maxLength": 100
+                },
+                "address": {
+                    "type": "string",
+                    "maxLength": 100
+                },
+                "postcode": {
+                    "type": "string",
+                    "maxLength": 10
+                },
+                "city": {
+                    "type": "string",
+                    "maxLength": 100
+                },
+                "country": {
+                    "type": "string",
+                    "maxLength": 2,
+                    "pattern": "^[A-Z]{2}$"
+                },
+                "hint": {
+                    "type": "string",
+                    "maxLength": 100
+                },
+                "text": { "$ref": "#/definitions/text" },
+                "phone": { "$ref": "#/definitions/phone" },
+                "mail": { "$ref": "#/definitions/mail" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "accessCode": { "$ref": "#/definitions/accessCode" }       
+            },
+            "required": ["name", "address", "postcode", "city", "country"],
+            "additionalProperties": false
+        },
+        {
+            "title": "Reservation",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "supplyOptionsType": { "enum": ["reservation"] },
+                "text": { "$ref": "#/definitions/text" },
+                "phone": { "$ref": "#/definitions/phone" },
+                "mail": { "$ref": "#/definitions/mail" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "accessCode": { "$ref": "#/definitions/accessCode" }
+            },
+            "additionalProperties": false
+        }
+    ],
+    "definitions": {
+        "version": {
+            "type": "number",
+            "const": 3
+        },
+        "supplyOptionsType": {
+            "enum": [
+                "reservation",
+                "shipment",
+                "delivery"
+            ]
+        },
+        "transactionId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "taskId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "accessCode": {
+            "type": "string",
+            "maxLength": 128
+        },
+        "text": {
+            "type": "string",
+            "maxLength": 2000
+        },
+        "phone": {
+            "type": "string",
+            "pattern": "^(\\+|00)[0-9]+$"
+        },
+        "mail": {
+            "type": "string",
+            "pattern": "^.+@.{1,}\\..{1,}$"
+        }
+    },
+    "required": [
+        "version",
+        "supplyOptionsType",
+        "phone",
+        "transactionId",
+        "taskId",
+        "accessCode",
+        "readyForCollection"
+    ],
+    "version": "2"
+}

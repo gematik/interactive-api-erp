@@ -1,0 +1,14 @@
+{
+    "transactionId": "ABCD-EFGH-IJKL-MNOP",
+    "taskId": "160.000.000.000.000.00",
+    "version": 3,
+    "supplyOptionsType": "shipment",
+    "phone": "+49555555555",
+    "accessCode": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "text": "Need it now!",
+    "name": "Max Mustermann",
+    "address": "Musterstraße 555",
+    "postcode": "55555",
+    "city": "Musterhause",
+    "country": "DE"
+}

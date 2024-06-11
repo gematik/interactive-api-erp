@@ -1,0 +1,305 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CommunicationReplyPayload",
+    "title": "Payload of CommunicationReplyPayload",
+    "type": "object",
+    "oneOf": [
+        {
+            "title": "text",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "text"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                }
+            },
+            "required": ["text"],
+            "additionalProperties": false
+        },
+        {
+            "title": "link",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "link"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "url": {
+                    "$ref": "#/definitions/url"
+                }
+            },
+            "required": ["text", "url"],
+            "additionalProperties": false
+        },
+        {
+            "title": "reservationStatus",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "reservationStatus"
+                },
+                "readyForCollection": {
+                    "$ref": "#/definitions/availabilityResponse"
+                }
+            },
+            "required": ["readyForCollection"],
+            "additionalProperties": false
+        },
+        {
+            "title": "pickUpCodeHR",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "pickUpCodeHR"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "pickupCode": { "$ref": "#/definitions/pickupCode" }
+            },
+            "required": ["pickupCode"],
+            "additionalProperties": false
+        },
+        {
+            "title": "pickUpCodeDMC",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "pickUpCodeDMC"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "pickupCodeDMC": { "$ref": "#/definitions/pickupCodeDMC" }
+            },
+            "required": ["pickupCodeDMC"],
+            "additionalProperties": false
+        },
+        {
+            "title": "deliveryStatus",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "deliveryStatus"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "deliveryStatus": {
+                    "$ref": "#/definitions/deliveryStatus"
+                },
+                "inTransportPosition": { "$ref": "#/definitions/coordinate"},
+                "inTransportETA": { "$ref": "#/definitions/timeframe"}
+            },
+            "required": ["deliveryStatus"],
+            "additionalProperties": false
+        },
+        {
+            "title": "paymentInfo",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "paymentInfo"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "totalAmount": { "$ref": "#/definitions/money"},
+                "paymentMethods": { "$ref": "#/definitions/paymentMethods" }
+            },
+            "required": ["totalAmount", "paymentMethods"],
+            "additionalProperties": false
+        },
+        {
+            "title": "availabilityResponse",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "taskId": { "$ref": "#/definitions/taskId" },
+                "communicationType": {
+                    "type": "string",
+                    "const": "availabilityResponse"
+                },
+                "supplyOptionsType": {
+                    "$ref": "#/definitions/supplyOptionsType"
+                },
+                "changedToSupplyOptionsType": {
+                    "$ref": "#/definitions/supplyOptionsType"
+                },
+                "text": {
+                    "$ref": "#/definitions/text"
+                },
+                "availabilityResponse":  { "$ref": "#/definitions/availabilityResponse" }
+            },
+            "required": ["supplyOptionsType", "availabilityResponse"]
+        }
+    ],
+    "definitions": {
+        "version": {
+            "type": "number",
+            "const": 3
+        },
+        "communicationType": {
+            "enum": [
+                "text",
+                "link",
+                "reservationStatus",
+                "pickUpCodeHR",
+                "pickUpCodeDMC",
+                "deliveryStatus",
+                "paymentInfo",
+                "availabilityResponse"
+            ]
+        },
+        "supplyOptionsType": {
+            "enum": [
+                "reservation",
+                "shipment",
+                "delivery"
+            ]
+        },
+        "transactionId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "taskId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "text": {
+            "type": "string",
+            "maxLength": 2000
+        },
+        "url": {
+            "type": "string",
+            "maxLength": 2000
+        },
+        "pickupCode": {
+            "type": "string",
+            "maxLength": 8,
+            "pattern": "^[a-zA-Z0-9]+$"
+        },
+        "pickupCodeDMC": {
+            "title": "DMC Content",
+            "description": "The app will convert this using utf8 encoding and write to a Data Matrix Code. This could be anything like custom JSON: `{\"custom_json\": \"payload\"}`, `BASE64==` encoded data or a simple id `abcdef-12345-sdfsdf`.",
+            "examples": ["{\"custom_json\": \"payload\"}", "BASE64=="],
+            "type": "string",
+            "maxLength": 2000
+        },
+        "deliveryStatus": {
+            "type": "string",
+            "enum": [
+                "pending",
+                "inTransit",
+                "delivered",
+                "failed"
+            ]
+        },
+        "coordinate": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "long": {
+                    "type": "number"
+                }
+            }
+        },
+        "timeframe": {
+            "type": "object",
+            "properties": {
+                "from": {
+                    "$ref": "#/definitions/datetime"
+                },
+                "to": {
+                    "$ref": "#/definitions/datetime"
+                }
+            }
+        },
+        "money": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "integer",
+                    "$comment": "Value in smallest currency unit (e.g. cents)"
+                },
+                "currency": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 3,
+                    "$comment": "ISO 4217 currency code"
+                }
+            },
+            "required": ["value", "currency"]
+        },
+        "datetime": {
+            "type": "number",
+            "$comment": "Unix Timestamp"
+        },
+        "paymentMethods": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/paymentMethod"
+            }
+        },
+        "paymentMethod": {
+            "type": "object",
+            "properties": {
+                "method": {
+                    "enum": [
+                        "cash",
+                        "bankaccount",
+                        "creditcard",
+                        "paypal"
+                    ]
+                },
+                "url": { "$ref": "#/definitions/url" }
+            },
+            "required": ["method"]
+        },
+        "availabilityResponse": {
+            "enum": [
+                "immediately",
+                "sameDay",
+                "nextDay",
+                "nextDayAM",
+                "nextDayPM",
+                "unknown",
+                "notAvailable"
+            ]
+        }
+    },
+    "required": [
+        "version",
+        "communicationType",
+        "taskId",
+        "transactionId"
+    ],
+    "version": "2"
+}

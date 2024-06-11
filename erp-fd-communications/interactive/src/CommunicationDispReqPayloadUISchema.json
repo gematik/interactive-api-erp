@@ -1,0 +1,89 @@
+{
+    "type": "Group",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/definitions/version"
+      },
+      {
+        "type": "Control",
+        "scope": "#/definitions/supplyOptionsType"
+      },
+      {
+        "type": "Group",
+        "label": "Task & Order",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/definitions/taskId"
+          },
+          {
+            "type": "Control",
+            "scope": "#/definitions/accessCode"
+          },
+          {
+            "type": "Control",
+            "scope": "#/definitions/transactionId"
+          }
+        ]
+      },
+      {
+        "type": "Group",
+        "label": "Contact",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/definitions/text"
+          },
+          {
+            "type": "Control",
+            "scope": "#/definitions/phone"
+          },
+          {
+            "type": "Control",
+            "scope": "#/definitions/mail"
+          }
+        ]
+      },
+      {
+        "type": "Group",
+        "label": "Address",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/name"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/address"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/postcode"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/city"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/country"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/hint"
+          }
+        ],
+        "rule": {
+          "effect": "SHOW",
+          "condition": {
+            "scope": "#/properties/supplyOptionsType",
+            "schema": {
+              "enum": ["delivery", "shipment"]
+            }
+          }
+        }
+      }
+    ]
+  }
+  

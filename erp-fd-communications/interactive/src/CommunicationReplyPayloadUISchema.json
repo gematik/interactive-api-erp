@@ -1,0 +1,177 @@
+{
+  "type": "Group",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/definitions/version"
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/communicationType"
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/taskId"
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/transactionId"
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/text",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["text", "link", "pickupCode", "pickUpCodeHR", "pickUpCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/url",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["link"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/2/properties/readyForCollection",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["reservationStatus"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/pickupCode",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["pickUpCodeHR"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/pickupCodeDMC",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["pickUpCodeDMC"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/definitions/deliveryStatus",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["deliveryStatus"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/5/properties/inTransportPosition",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["deliveryStatus"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/5/properties/inTransportETA",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["deliveryStatus"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/6/properties/totalAmount",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["paymentInfo"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/6/properties/paymentMethods",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["paymentInfo"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/7/properties/supplyOptionsType",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["availabilityResponse"]
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/oneOf/7/properties/changedToSupplyOptionsType",
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/communicationType",
+          "schema": {
+            "enum": ["availabilityResponse"]
+          }
+        }
+      }
+    }
+  ]
+}

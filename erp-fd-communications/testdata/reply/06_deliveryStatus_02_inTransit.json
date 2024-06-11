@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "text": "Some Text to state your request",
+    "transactionId": "ABCD-EFGH-IJKL-MNOP",
+    "taskId": "160.000.000.000.000.00",
+    "communicationType": "deliveryStatus",
+    "deliveryStatus": "inTransit",
+    "inTransportPosition": {
+        "long": 13.387595793605172,
+        "lat": 52.522529939635795
+    },
+    "inTransportETA": {
+        "from": 1735736400,
+        "to": 1735741800
+    }
+}

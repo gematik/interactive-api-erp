@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CommunicationInfoReqPayload",
+    "title": "Payload of CommunicationInfoReqPayload",
+    "type": "object",
+    "properties": {
+        "version": { "$ref": "#/definitions/version" },
+        "supplyOptionsType": { "$ref": "#/definitions/supplyOptionsType" },
+        "transactionId": { "$ref": "#/definitions/transactionId" },
+        "taskId": { "$ref": "#/definitions/taskId" },
+        "name": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "address": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "postcode": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "city": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "country": {
+            "type": "string",
+            "maxLength": 2,
+            "pattern": "^[A-Z]{2}$"
+        },
+        "hint": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "text": {
+            "type": "string",
+            "maxLength": 2000
+        },
+        "phone": {
+            "type": "string",
+            "pattern": "^(\\+|00)[0-9]+$"
+        },
+        "mail": {
+            "type": "string",
+            "pattern": "^.+@.{1,}\\..{1,}$"
+        }
+    },
+    "required": [
+        "version",
+        "supplyOptionsType",
+        "name",
+        "address",
+        "postcode",
+        "city",
+        "country",
+        "phone",
+        "transactionId",
+        "taskId"
+    ],
+    "definitions": {
+        "version": {
+            "type": "number",
+            "const": 3
+        },
+        "supplyOptionsType": {
+            "title": "SupplyOptionsType",
+            "enum": [
+                "reservation",
+                "shipment",
+                "delivery"
+            ]
+        },
+        "transactionId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "taskId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "text": {
+            "type": "string",
+            "maxLength": 2000
+        }
+    },
+    "additionalProperties": false,
+    "version": "2"
+}

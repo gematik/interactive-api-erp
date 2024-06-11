@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CommunicationReplyPayload",
+    "title": "Payload of CommunicationReplyPayload",
+    "type": "object",
+    "properties": {
+        "version": { "$ref": "#/definitions/version" },
+        "text": { "$ref": "#/definitions/text" },
+        "transactionId": { "$ref": "#/definitions/transactionId" },
+        "taskId": { "$ref": "#/definitions/taskId" },
+        "accessCode": { "$ref": "#/definitions/accessCode" }
+    },
+    "definitions": {
+        "version": {
+            "type": "number",
+            "const": 3
+        },
+        "text": {
+            "type": "string",
+            "maxLength": 2000
+        },
+        "transactionId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "taskId": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "accessCode": {
+            "type": "string",
+            "maxLength": 128
+        }
+    },
+    "required": [
+        "version",
+        "taskId",
+        "transactionId"
+    ],
+    "version": "2"
+}
