@@ -1,0 +1,7 @@
+{
+    "version": 3,
+    "transactionID": "ABCD-EFGH-IJKL-MNOP",
+    "communicationType": "text",
+    "phone": "+49555555555",
+    "text": "Gibt es noch Traubenzucker?"
+}

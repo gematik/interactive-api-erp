@@ -8,54 +8,82 @@
             "title": "Delivery & Shipment",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
+                "communicationType": {
+                    "$ref": "#/definitions/communicationType",
+                    "value": "order"
+                },
                 "supplyOptionsType": { "enum": ["delivery", "shipment"] },
-                "name": {
+                "firstname": {
                     "type": "string",
-                    "maxLength": 100
+                    "maxLength": 45
+                },
+                "lastname": {
+                    "type": "string",
+                    "maxLength": 45
                 },
                 "address": {
                     "type": "string",
+                    "minLength": 3,
                     "maxLength": 100
                 },
                 "postcode": {
                     "type": "string",
+                    "minLength": 3,
                     "maxLength": 10
                 },
                 "city": {
                     "type": "string",
+                    "minLength": 2,
                     "maxLength": 100
                 },
                 "country": {
                     "type": "string",
-                    "maxLength": 2,
-                    "pattern": "^[A-Z]{2}$"
+                    "minLength": 2,
+                    "maxLength": 3,
+                    "description": "2-letter country code as defined in ISO 3166-1."
                 },
-                "hint": {
-                    "type": "string",
-                    "maxLength": 100
-                },
+                "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
                 "mail": { "$ref": "#/definitions/mail" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
-                "taskId": { "$ref": "#/definitions/taskId" },
-                "accessCode": { "$ref": "#/definitions/accessCode" }       
+                "transactionID": { "$ref": "#/definitions/transactionID" }
             },
-            "required": ["name", "address", "postcode", "city", "country"],
+            "required": ["version", "communicationType", "firstname", "lastname", "address", "postcode", "city", "country", "phone"],
             "additionalProperties": false
         },
         {
             "title": "Reservation",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
+                "communicationType": {
+                    "$ref": "#/definitions/communicationType",
+                    "value": "order"
+                },
                 "supplyOptionsType": { "enum": ["reservation"] },
+                "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
                 "mail": { "$ref": "#/definitions/mail" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
-                "taskId": { "$ref": "#/definitions/taskId" },
-                "accessCode": { "$ref": "#/definitions/accessCode" }
+                "transactionID": { "$ref": "#/definitions/transactionID" }
             },
+            "required": ["version", "communicationType", "phone"],
+            "additionalProperties": false
+        },
+        {
+            "title": "Message",
+            "properties": {
+                "version": { "$ref": "#/definitions/version" },
+                "communicationType": {
+                    "$ref": "#/definitions/communicationType",
+                    "value": "text"
+                },
+                "hint": { "$ref": "#/definitions/hint" },
+                "text": { "$ref": "#/definitions/text" },
+                "phone": { "$ref": "#/definitions/phone" },
+                "mail": { "$ref": "#/definitions/mail" },
+                "transactionID": { "$ref": "#/definitions/transactionID" }
+            },
+            "required": ["version", "communicationType", "text", "transactionID"],
             "additionalProperties": false
         }
     ],
@@ -64,6 +92,9 @@
             "type": "number",
             "const": 3
         },
+        "communicationType": {
+            "enum": ["order", "text"]
+        },
         "supplyOptionsType": {
             "enum": [
                 "reservation",
@@ -71,25 +102,23 @@
                 "delivery"
             ]
         },
-        "transactionId": {
+        "transactionID": {
             "type": "string",
             "maxLength": 50
         },
-        "taskId": {
+        "hint": {
             "type": "string",
-            "maxLength": 50
-        },
-        "accessCode": {
-            "type": "string",
-            "maxLength": 128
+            "maxLength": 100
         },
         "text": {
             "type": "string",
-            "maxLength": 2000
+            "maxLength": 800
         },
         "phone": {
             "type": "string",
-            "pattern": "^(\\+|00)[0-9]+$"
+            "pattern": "^(\\+|00)[0-9]+$",
+            "maxLength": 32,
+            "description": "Telefonnummer E-164 Format, jedoch anstelle des „+“ mit „00“ / rein nummerisch."
         },
         "mail": {
             "type": "string",
@@ -99,11 +128,7 @@
     "required": [
         "version",
         "supplyOptionsType",
-        "phone",
-        "transactionId",
-        "taskId",
-        "accessCode",
-        "readyForCollection"
+        "transactionID"
     ],
     "version": "2"
 }

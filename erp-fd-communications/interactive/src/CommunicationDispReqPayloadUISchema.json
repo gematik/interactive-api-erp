@@ -7,23 +7,34 @@
       },
       {
         "type": "Control",
-        "scope": "#/definitions/supplyOptionsType"
+        "scope": "#/definitions/communicationType"
       },
       {
         "type": "Group",
-        "label": "Task & Order",
+        "label": "Order",
         "elements": [
           {
             "type": "Control",
-            "scope": "#/definitions/taskId"
-          },
+            "scope": "#/definitions/supplyOptionsType"
+          }
+        ],
+        "rule": {
+          "effect": "SHOW",
+          "condition": {
+            "scope": "#/properties/communicationType",
+            "schema": {
+              "enum": ["order"]
+            }
+          }
+        }
+      },
+      {
+        "type": "Group",
+        "label": "Transaction ID",
+        "elements": [
           {
             "type": "Control",
-            "scope": "#/definitions/accessCode"
-          },
-          {
-            "type": "Control",
-            "scope": "#/definitions/transactionId"
+            "scope": "#/definitions/transactionID"
           }
         ]
       },
@@ -51,7 +62,11 @@
         "elements": [
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/name"
+            "scope": "#/oneOf/0/properties/firstname"
+          },
+          {
+            "type": "Control",
+            "scope": "#/oneOf/0/properties/lastname"
           },
           {
             "type": "Control",

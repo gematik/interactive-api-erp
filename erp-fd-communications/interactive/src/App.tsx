@@ -17,7 +17,6 @@ import './App.css';
 //import schema from './schema.json';
 import communicationReplySchemaRaw from './CommunicationReplyPayload.json';
 import communicationDispReqSchemaRaw from './CommunicationDispReqPayload.json';
-import communicationInfoReqSchemaRaw from './CommunicationInfoReqPayload.json';
 import communicationRepresentativeSchemaRaw from './CommunicationRepresentativePayload.json';
 import communicationReplyUISchemaRaw from './CommunicationReplyPayloadUISchema.json';
 import communicationDispReqUISchemaRaw from './CommunicationDispReqPayloadUISchema.json';
@@ -36,7 +35,6 @@ const communicationReplySchema: any = communicationReplySchemaRaw
 const communicationReplyUISchema: any = communicationReplyUISchemaRaw
 const communicationDispReqSchema: any = communicationDispReqSchemaRaw
 const communicationDispReqUISchema: any = communicationDispReqUISchemaRaw
-const communicationInfoReqSchema: any = communicationInfoReqSchemaRaw
 const communicationRepresentativeSchema: any = communicationRepresentativeSchemaRaw
 
 const renderers = [
@@ -58,7 +56,6 @@ const TabMenu: React.FC<TabMenuProps> = (props) => {
   return (
     <ul className="tab-menu">
     <li><button onClick={() => handleTabChange('dispReq')} className={props.activeTab === 'dispReq' ? 'active' : ''}>DispReq</button></li>
-    <li><button onClick={() => handleTabChange('infoReq')} className={props.activeTab === 'infoReq' ? 'active' : ''}>InfoReq</button></li>
     <li><button onClick={() => handleTabChange('reply')} className={props.activeTab === 'reply' ? 'active' : ''}>Reply</button></li>
     <li><button onClick={() => handleTabChange('representative')} className={props.activeTab === 'representative' ? 'active' : ''}>Representative</button></li>
     <li><button className="legal" onClick={() => document.location.href='./sbom.spdx'}>SBOM</button></li>
@@ -89,8 +86,6 @@ const App = () => {
     let schemaData = '{}';
     if (activeTab === 'dispReq') {
       schemaData = JSON.stringify(communicationDispReqSchema, null, 2);
-    } else if (activeTab === 'infoReq') {
-      schemaData = JSON.stringify(communicationInfoReqSchema, null, 2);
     } else if (activeTab === 'reply') {
       schemaData = JSON.stringify(communicationReplySchema, null, 2);
     } else if (activeTab === 'representative') {
@@ -101,8 +96,6 @@ const App = () => {
   const activeSchema = () => {
     if (activeTab === 'dispReq') {
       return "DispenseRequest";
-    } else if (activeTab === 'infoReq') {
-      return "InfoRequest";
     } else if (activeTab === 'reply') {
       return "Reply";
     } else if (activeTab === 'representative') {
@@ -155,15 +148,6 @@ const App = () => {
           data={{}}
           renderers={renderers}
           demoData={examples.dispReq}
-        />
-      )}
-      {activeTab === 'infoReq' && (
-        <SingleForm
-          id='infoReq'
-          schema={communicationInfoReqSchema}
-          data={{}}
-          renderers={renderers}
-          demoData={examples.infoReq}
         />
       )}
       {activeTab === 'reply' && (

@@ -6,7 +6,7 @@
     "properties": {
         "version": { "$ref": "#/definitions/version" },
         "text": { "$ref": "#/definitions/text" },
-        "transactionId": { "$ref": "#/definitions/transactionId" },
+        "transactionID": { "$ref": "#/definitions/transactionID" },
         "taskId": { "$ref": "#/definitions/taskId" },
         "accessCode": { "$ref": "#/definitions/accessCode" }
     },
@@ -19,7 +19,7 @@
             "type": "string",
             "maxLength": 2000
         },
-        "transactionId": {
+        "transactionID": {
             "type": "string",
             "maxLength": 50
         },
@@ -35,7 +35,7 @@
     "required": [
         "version",
         "taskId",
-        "transactionId"
+        "transactionID"
     ],
     "version": "2"
 }

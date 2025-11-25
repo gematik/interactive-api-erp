@@ -15,7 +15,7 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/transactionId"
+      "scope": "#/definitions/transactionID"
     },
     {
       "type": "Control",

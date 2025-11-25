@@ -1,8 +1,7 @@
 {
     "version": 3,
     "text": "Some Text to state your request",
-    "transactionId": "ABCD-EFGH-IJKL-MNOP",
-    "taskId": "160.000.000.000.000.00",
+    "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "communicationType": "paymentInfo",
     "totalAmount": {
         "value": 12530,

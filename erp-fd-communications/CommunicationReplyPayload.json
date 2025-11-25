@@ -8,7 +8,7 @@
             "title": "text",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -25,7 +25,7 @@
             "title": "link",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -45,7 +45,7 @@
             "title": "reservationStatus",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -62,7 +62,7 @@
             "title": "pickUpCodeHR",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -80,7 +80,7 @@
             "title": "pickUpCodeDMC",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -98,7 +98,7 @@
             "title": "deliveryStatus",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -120,7 +120,7 @@
             "title": "paymentInfo",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -139,7 +139,7 @@
             "title": "availabilityResponse",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
-                "transactionId": { "$ref": "#/definitions/transactionId" },
+                "transactionID": { "$ref": "#/definitions/transactionID" },
                 "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
@@ -183,7 +183,7 @@
                 "delivery"
             ]
         },
-        "transactionId": {
+        "transactionID": {
             "type": "string",
             "maxLength": 50
         },
@@ -299,7 +299,7 @@
         "version",
         "communicationType",
         "taskId",
-        "transactionId"
+        "transactionID"
     ],
     "version": "2"
 }
