@@ -15,8 +15,5 @@
     "06_deliveryStatus_01_failed": "{\n    \"version\": 3,\n    \"text\": \"Some Text to state your request\",\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"communicationType\": \"deliveryStatus\",\n    \"deliveryStatus\": \"incident\"\n}",
     "06_deliveryStatus_02_inTransit": "{\n    \"version\": 3,\n    \"text\": \"Some Text to state your request\",\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"communicationType\": \"deliveryStatus\",\n    \"deliveryStatus\": \"inTransport\",\n    \"inTransportPosition\": {\n        \"long\": 13.387595793605172,\n        \"lat\": 52.522529939635795\n    },\n    \"inTransportETA\": {\n        \"from\": 1735736400,\n        \"to\": 1735741800\n    }\n}",
     "07_paymentInfo": "{\n    \"version\": 3,\n    \"text\": \"Some Text to state your request\",\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"communicationType\": \"paymentInfo\",\n    \"totalAmount\": 12530,\n    \"paymentMethods\": [\n        {\n            \"method\": \"cash\"\n        },\n        {\n            \"method\": \"bankaccount\",\n            \"url\": \"https://my.payment.provider.de/pay/<payment_transaction_id>\"\n        },\n        {\n            \"method\": \"paypal\",\n            \"url\": \"https://paypal.me/<some_account>\"\n        }\n    ]\n}"
-  },
-  "representative": {
-    "01_info": "{\n    \"version\": 3,\n    \"text\": \"Some Text to state your request\",\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"accessCode\": \"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef\"\n}"
   }
 }

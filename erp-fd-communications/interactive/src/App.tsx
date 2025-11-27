@@ -17,7 +17,6 @@ import './App.css';
 //import schema from './schema.json';
 import communicationReplySchemaRaw from './CommunicationReplyPayload.json';
 import communicationDispReqSchemaRaw from './CommunicationDispReqPayload.json';
-import communicationRepresentativeSchemaRaw from './CommunicationRepresentativePayload.json';
 import communicationReplyUISchemaRaw from './CommunicationReplyPayloadUISchema.json';
 import communicationDispReqUISchemaRaw from './CommunicationDispReqPayloadUISchema.json';
 import examples from './examples.json';
@@ -35,7 +34,6 @@ const communicationReplySchema: any = communicationReplySchemaRaw
 const communicationReplyUISchema: any = communicationReplyUISchemaRaw
 const communicationDispReqSchema: any = communicationDispReqSchemaRaw
 const communicationDispReqUISchema: any = communicationDispReqUISchemaRaw
-const communicationRepresentativeSchema: any = communicationRepresentativeSchemaRaw
 
 const renderers = [
   ...materialRenderers,
@@ -57,7 +55,6 @@ const TabMenu: React.FC<TabMenuProps> = (props) => {
     <ul className="tab-menu">
     <li><button onClick={() => handleTabChange('dispReq')} className={props.activeTab === 'dispReq' ? 'active' : ''}>DispReq</button></li>
     <li><button onClick={() => handleTabChange('reply')} className={props.activeTab === 'reply' ? 'active' : ''}>Reply</button></li>
-    <li><button onClick={() => handleTabChange('representative')} className={props.activeTab === 'representative' ? 'active' : ''}>Representative</button></li>
     <li><button className="legal" onClick={() => document.location.href='./sbom.spdx'}>SBOM</button></li>
   </ul>
   );
@@ -88,8 +85,6 @@ const App = () => {
       schemaData = JSON.stringify(communicationDispReqSchema, null, 2);
     } else if (activeTab === 'reply') {
       schemaData = JSON.stringify(communicationReplySchema, null, 2);
-    } else if (activeTab === 'representative') {
-      schemaData = JSON.stringify(communicationRepresentativeSchema, null, 2);
     }
     return schemaData
   }
@@ -158,15 +153,6 @@ const App = () => {
           data={{}}
           renderers={renderers}
           demoData={examples.reply}
-        />
-      )}
-      {activeTab === 'representative' && (
-        <SingleForm
-          id='representative'
-          schema={communicationRepresentativeSchema}
-          data={{}}
-          renderers={renderers}
-          demoData={examples.representative}
         />
       )}
     </Fragment>
