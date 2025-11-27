@@ -3,11 +3,11 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "jsonforms-react-seed@0.1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-2ec9b119-ca68-4a9b-a0e8-63a1ea0b77ed",
+  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-3bd45e33-3b8e-4779-a33e-6a8564c7f765",
   "creationInfo": {
-    "created": "2024-07-19T08:50:42.365Z",
+    "created": "2025-11-27T08:04:14.892Z",
     "creators": [
-      "Tool: npm/cli-10.5.0"
+      "Tool: npm/cli-10.8.2"
     ]
   },
   "documentDescribes": [
@@ -6792,24 +6792,6 @@
       ]
     },
     {
-      "name": "@kessler/tableify",
-      "SPDXID": "SPDXRef-Package-kessler.tableify-1.0.2",
-      "versionInfo": "1.0.2",
-      "packageFileName": "node_modules/@kessler/tableify",
-      "description": "Create HTML tables from Javascript Objects",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/kessler/node-tableify",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/%40kessler/tableify@1.0.2"
-        }
-      ]
-    },
-    {
       "name": "@leichtgewicht/ip-codec",
       "SPDXID": "SPDXRef-Package-leichtgewicht.ip-codec-2.0.5",
       "versionInfo": "2.0.5",
@@ -7602,24 +7584,6 @@
       ]
     },
     {
-      "name": "@sindresorhus/is",
-      "SPDXID": "SPDXRef-Package-sindresorhus.is-5.6.0",
-      "versionInfo": "5.6.0",
-      "packageFileName": "node_modules/@sindresorhus/is",
-      "description": "Type check values",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/is#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/%40sindresorhus/is@5.6.0"
-        }
-      ]
-    },
-    {
       "name": "@sinonjs/commons",
       "SPDXID": "SPDXRef-Package-sinonjs.commons-1.8.6",
       "versionInfo": "1.8.6",
@@ -8028,24 +7992,6 @@
       ]
     },
     {
-      "name": "@szmarczak/http-timer",
-      "SPDXID": "SPDXRef-Package-szmarczak.http-timer-5.0.1",
-      "versionInfo": "5.0.1",
-      "packageFileName": "node_modules/@szmarczak/http-timer",
-      "description": "Timings for HTTP requests",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/szmarczak/http-timer#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/%40szmarczak/http-timer@5.0.1"
-        }
-      ]
-    },
-    {
       "name": "@tootallnate/once",
       "SPDXID": "SPDXRef-Package-tootallnate.once-1.1.2",
       "versionInfo": "1.1.2",
@@ -8450,24 +8396,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "a21ffa6f20cf9cbd7378d5c5ac35c52f266392bd4cb011baebb20cefdd9c69fd4bd943ce38c7fae4d1738d41ff96dc9fc230067ecd6bb17d5e7ed2b48c2fca22"
-        }
-      ]
-    },
-    {
-      "name": "@types/http-cache-semantics",
-      "SPDXID": "SPDXRef-Package-types.http-cache-semantics-4.0.4",
-      "versionInfo": "4.0.4",
-      "packageFileName": "node_modules/@types/http-cache-semantics",
-      "description": "TypeScript definitions for http-cache-semantics",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/http-cache-semantics",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/%40types/http-cache-semantics@4.0.4"
         }
       ]
     },
@@ -12497,78 +12425,6 @@
       ]
     },
     {
-      "name": "cacheable-lookup",
-      "SPDXID": "SPDXRef-Package-cacheable-lookup-7.0.0",
-      "versionInfo": "7.0.0",
-      "packageFileName": "node_modules/cacheable-lookup",
-      "description": "A cacheable dns.lookup(…) that respects TTL",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/szmarczak/cacheable-lookup#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/cacheable-lookup@7.0.0"
-        }
-      ]
-    },
-    {
-      "name": "cacheable-request",
-      "SPDXID": "SPDXRef-Package-cacheable-request-10.2.14",
-      "versionInfo": "10.2.14",
-      "packageFileName": "node_modules/cacheable-request",
-      "description": "Wrap native HTTP requests with RFC compliant cache support",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/jaredwray/cacheable#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/cacheable-request@10.2.14"
-        }
-      ]
-    },
-    {
-      "name": "get-stream",
-      "SPDXID": "SPDXRef-Package-get-stream-6.0.1",
-      "versionInfo": "6.0.1",
-      "packageFileName": "node_modules/cacheable-request/node_modules/get-stream",
-      "description": "Get a stream as a string, buffer, or array",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/get-stream#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/get-stream@6.0.1"
-        }
-      ]
-    },
-    {
-      "name": "normalize-url",
-      "SPDXID": "SPDXRef-Package-normalize-url-8.0.1",
-      "versionInfo": "8.0.1",
-      "packageFileName": "node_modules/cacheable-request/node_modules/normalize-url",
-      "description": "Normalize a URL",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/normalize-url#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/normalize-url@8.0.1"
-        }
-      ]
-    },
-    {
       "name": "cachedir",
       "SPDXID": "SPDXRef-Package-cachedir-2.4.0",
       "versionInfo": "2.4.0",
@@ -15039,42 +14895,6 @@
       ]
     },
     {
-      "name": "decompress-response",
-      "SPDXID": "SPDXRef-Package-decompress-response-6.0.0",
-      "versionInfo": "6.0.0",
-      "packageFileName": "node_modules/decompress-response",
-      "description": "Decompress a HTTP response if needed",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/decompress-response#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/decompress-response@6.0.0"
-        }
-      ]
-    },
-    {
-      "name": "mimic-response",
-      "SPDXID": "SPDXRef-Package-mimic-response-3.1.0",
-      "versionInfo": "3.1.0",
-      "packageFileName": "node_modules/decompress-response/node_modules/mimic-response",
-      "description": "Mimic a Node.js HTTP response stream",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/mimic-response#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/mimic-response@3.1.0"
-        }
-      ]
-    },
-    {
       "name": "dedent",
       "SPDXID": "SPDXRef-Package-dedent-0.7.0",
       "versionInfo": "0.7.0",
@@ -15119,24 +14939,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "648c299debcebab4bc6e94f8d7ddaca80a3058cefa2432921d8ccc2edcb7059192b3082aea905a1f70e10925b9c5501920267229d3813e3c30c39c1f813ffa3c"
-        }
-      ]
-    },
-    {
-      "name": "deep-extend",
-      "SPDXID": "SPDXRef-Package-deep-extend-0.6.0",
-      "versionInfo": "0.6.0",
-      "packageFileName": "node_modules/deep-extend",
-      "description": "Recursive object extending",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/unclechu/node-deep-extend",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/deep-extend@0.6.0"
         }
       ]
     },
@@ -15281,24 +15083,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "07814567aabf4f68e1864b2091b116dc706f5887c35bce6c9e44206b0b74ed2ec9e505d393a064355fb4c80799acce50a4c01d625a1c1a89639f4b09fd642417"
-        }
-      ]
-    },
-    {
-      "name": "defer-to-connect",
-      "SPDXID": "SPDXRef-Package-defer-to-connect-2.0.1",
-      "versionInfo": "2.0.1",
-      "packageFileName": "node_modules/defer-to-connect",
-      "description": "The safe way to handle the `connect` socket event",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/szmarczak/defer-to-connect#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/defer-to-connect@2.0.1"
         }
       ]
     },
@@ -16331,24 +16115,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "a7dda27f9373eb5f48d30f9a909acb647d0c5f43dbe435f7f573b0413b5749d41039a607d374b5b88429e2684e66d017af1ab85623baed84e22c1a36eb7f28f4"
-        }
-      ]
-    },
-    {
-      "name": "eol",
-      "SPDXID": "SPDXRef-Package-eol-0.9.1",
-      "versionInfo": "0.9.1",
-      "packageFileName": "node_modules/eol",
-      "description": "Newline character converter",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/ryanve/eol",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/eol@0.9.1"
         }
       ]
     },
@@ -19063,24 +18829,6 @@
       ]
     },
     {
-      "name": "form-data-encoder",
-      "SPDXID": "SPDXRef-Package-form-data-encoder-2.1.4",
-      "versionInfo": "2.1.4",
-      "packageFileName": "node_modules/form-data-encoder",
-      "description": "Encode FormData content into the multipart/form-data format",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/octet-stream/form-data-encoder#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/form-data-encoder@2.1.4"
-        }
-      ]
-    },
-    {
       "name": "forwarded",
       "SPDXID": "SPDXRef-Package-forwarded-0.2.0",
       "versionInfo": "0.2.0",
@@ -19460,24 +19208,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "a63cee2ad63ae0661f5a2ccd009d1fafd56ab6d6643622b6892e37d0bb481f38c112be9b5fc026db39b8b16e11a39c23596e5c02544bd6a00c4dc5db8cd00ed9"
-        }
-      ]
-    },
-    {
-      "name": "get-stdin",
-      "SPDXID": "SPDXRef-Package-get-stdin-5.0.1",
-      "versionInfo": "5.0.1",
-      "packageFileName": "node_modules/get-stdin",
-      "description": "Get stdin as a string or buffer",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/get-stdin#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/get-stdin@5.0.1"
         }
       ]
     },
@@ -19982,42 +19712,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "77ae5b36521a771be96ff03669b55d96a2aa579eb78ee4676755ad93ab35b0847cb8db1747bd31a88cd5ab155fd5e4ea0ee9f04f632473311e69ecc2293661c0"
-        }
-      ]
-    },
-    {
-      "name": "got",
-      "SPDXID": "SPDXRef-Package-got-13.0.0",
-      "versionInfo": "13.0.0",
-      "packageFileName": "node_modules/got",
-      "description": "Human-friendly and powerful HTTP request library for Node.js",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/got#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/got@13.0.0"
-        }
-      ]
-    },
-    {
-      "name": "get-stream",
-      "SPDXID": "SPDXRef-Package-get-stream-6.0.1",
-      "versionInfo": "6.0.1",
-      "packageFileName": "node_modules/got/node_modules/get-stream",
-      "description": "Get a stream as a string, buffer, or array",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/get-stream#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/get-stream@6.0.1"
         }
       ]
     },
@@ -20694,24 +20388,6 @@
       ]
     },
     {
-      "name": "http-cache-semantics",
-      "SPDXID": "SPDXRef-Package-http-cache-semantics-4.1.1",
-      "versionInfo": "4.1.1",
-      "packageFileName": "node_modules/http-cache-semantics",
-      "description": "Parses Cache-Control and other headers. Helps building correct HTTP caches and proxies",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/kornelski/http-cache-semantics#readme",
-      "licenseDeclared": "BSD-2-Clause",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/http-cache-semantics@4.1.1"
-        }
-      ]
-    },
-    {
       "name": "http-deceiver",
       "SPDXID": "SPDXRef-Package-http-deceiver-1.2.7",
       "versionInfo": "1.2.7",
@@ -20876,24 +20552,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "dda76bb03eb3aa8e06b13aad3bb172ade8c736ff8d82221f01fbfaf3e8d5945992afd386cbbcebc4e35c78544b2af9e7640e636f14015f5bbd3e907a5a2df61b"
-        }
-      ]
-    },
-    {
-      "name": "http2-wrapper",
-      "SPDXID": "SPDXRef-Package-http2-wrapper-2.2.1",
-      "versionInfo": "2.2.1",
-      "packageFileName": "node_modules/http2-wrapper",
-      "description": "HTTP2 client, just with the familiar `https` API",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/szmarczak/http2-wrapper#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/http2-wrapper@2.2.1"
         }
       ]
     },
@@ -27216,24 +26874,6 @@
       ]
     },
     {
-      "name": "license-report",
-      "SPDXID": "SPDXRef-Package-license-report-6.5.0",
-      "versionInfo": "6.5.0",
-      "packageFileName": "node_modules/license-report",
-      "description": "creates a short report about project's dependencies (license, url etc)",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/ironSource/license-report",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/license-report@6.5.0"
-        }
-      ]
-    },
-    {
       "name": "lilconfig",
       "SPDXID": "SPDXRef-Package-lilconfig-2.1.0",
       "versionInfo": "2.1.0",
@@ -27690,24 +27330,6 @@
       ]
     },
     {
-      "name": "lowercase-keys",
-      "SPDXID": "SPDXRef-Package-lowercase-keys-3.0.0",
-      "versionInfo": "3.0.0",
-      "packageFileName": "node_modules/lowercase-keys",
-      "description": "Lowercase the keys of an object",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/lowercase-keys#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/lowercase-keys@3.0.0"
-        }
-      ]
-    },
-    {
       "name": "lru-cache",
       "SPDXID": "SPDXRef-Package-lru-cache-5.1.1",
       "versionInfo": "5.1.1",
@@ -28136,24 +27758,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "3aa6ce939a0441e019f165d6c9d96ef47263cfd59574422f6a63027179aea946234e49c7fecaac5af850def830285451d47a63bcd04a437ee76c9818cc6a8672"
-        }
-      ]
-    },
-    {
-      "name": "mimic-response",
-      "SPDXID": "SPDXRef-Package-mimic-response-4.0.0",
-      "versionInfo": "4.0.0",
-      "packageFileName": "node_modules/mimic-response",
-      "description": "Mimic a Node.js HTTP response stream",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/mimic-response#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/mimic-response@4.0.0"
         }
       ]
     },
@@ -29209,24 +28813,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "a3a139a89579ce401b203361192225c8e85270a5e042b49132295fa61d1c9437ccd2712704e94a947e2c583986f79056fc2bf0373d2f9a6edd255b54d8a94c88"
-        }
-      ]
-    },
-    {
-      "name": "p-cancelable",
-      "SPDXID": "SPDXRef-Package-p-cancelable-3.0.0",
-      "versionInfo": "3.0.0",
-      "packageFileName": "node_modules/p-cancelable",
-      "description": "Create a promise that can be canceled",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/p-cancelable#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/p-cancelable@3.0.0"
         }
       ]
     },
@@ -32494,24 +32080,6 @@
       ]
     },
     {
-      "name": "quick-lru",
-      "SPDXID": "SPDXRef-Package-quick-lru-5.1.1",
-      "versionInfo": "5.1.1",
-      "packageFileName": "node_modules/quick-lru",
-      "description": "Simple “Least Recently Used” (LRU) cache",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/quick-lru#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/quick-lru@5.1.1"
-        }
-      ]
-    },
-    {
       "name": "raf",
       "SPDXID": "SPDXRef-Package-raf-3.4.1",
       "versionInfo": "3.4.1",
@@ -32652,60 +32220,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "bf73179d901cbe7cb091350466898801cb657bb4575de79d391df5c3097b565ca85cee108bd6abbd27a73505a77b54dc4708422f51f02c8db56c4a9da63f3fac"
-        }
-      ]
-    },
-    {
-      "name": "rc",
-      "SPDXID": "SPDXRef-Package-rc-1.2.8",
-      "versionInfo": "1.2.8",
-      "packageFileName": "node_modules/rc",
-      "description": "hardwired configuration loader",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/dominictarr/rc#readme",
-      "licenseDeclared": "(BSD-2-Clause OR MIT OR Apache-2.0)",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/rc@1.2.8"
-        }
-      ]
-    },
-    {
-      "name": "ini",
-      "SPDXID": "SPDXRef-Package-ini-1.3.8",
-      "versionInfo": "1.3.8",
-      "packageFileName": "node_modules/rc/node_modules/ini",
-      "description": "An ini encoder/decoder for node",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/isaacs/ini#readme",
-      "licenseDeclared": "ISC",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/ini@1.3.8"
-        }
-      ]
-    },
-    {
-      "name": "strip-json-comments",
-      "SPDXID": "SPDXRef-Package-strip-json-comments-2.0.1",
-      "versionInfo": "2.0.1",
-      "packageFileName": "node_modules/rc/node_modules/strip-json-comments",
-      "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/strip-json-comments#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/strip-json-comments@2.0.1"
         }
       ]
     },
@@ -33597,24 +33111,6 @@
       ]
     },
     {
-      "name": "resolve-alpn",
-      "SPDXID": "SPDXRef-Package-resolve-alpn-1.2.1",
-      "versionInfo": "1.2.1",
-      "packageFileName": "node_modules/resolve-alpn",
-      "description": "Detects the ALPN protocol",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/szmarczak/resolve-alpn#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/resolve-alpn@1.2.1"
-        }
-      ]
-    },
-    {
       "name": "resolve-cwd",
       "SPDXID": "SPDXRef-Package-resolve-cwd-3.0.0",
       "versionInfo": "3.0.0",
@@ -33803,24 +33299,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "fcdb691cd0cdee35a101a43d06f054619e984d7b110607ea58558fec16416a83093bf2371b9385cef4ee58d9590b768f8e29ecd45f9336b2cab066c7e2b7ec45"
-        }
-      ]
-    },
-    {
-      "name": "responselike",
-      "SPDXID": "SPDXRef-Package-responselike-3.0.0",
-      "versionInfo": "3.0.0",
-      "packageFileName": "node_modules/responselike",
-      "description": "A response-like object for mocking a Node.js HTTP response stream",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/sindresorhus/responselike#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/responselike@3.0.0"
         }
       ]
     },
@@ -34564,24 +34042,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "e85973b9b4cb646dc9d9afcd542025784863ceae68c601f268253dc985ef70bb2fa1568726afece715c8ebf5d73fab73ed1f7100eb479d23bfb57b45dd645394"
-        }
-      ]
-    },
-    {
-      "name": "sentence-case",
-      "SPDXID": "SPDXRef-Package-sentence-case-3.0.4",
-      "versionInfo": "3.0.4",
-      "packageFileName": "node_modules/sentence-case",
-      "description": "Transform into a lower case with spaces between words, then capitalize the string",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/blakeembrey/change-case/tree/master/packages/sentence-case#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/sentence-case@3.0.4"
         }
       ]
     },
@@ -35350,24 +34810,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "c03d807959b15d10685f8e300327208d5a4c86f6f0748d9a6630a4bdf35c1f562a1d0bc955ad5db9673bdcec9518951cd397e115a4d9790fcf62cae6c87d0954"
-        }
-      ]
-    },
-    {
-      "name": "split-text-to-chunks",
-      "SPDXID": "SPDXRef-Package-split-text-to-chunks-1.0.0",
-      "versionInfo": "1.0.0",
-      "packageFileName": "node_modules/split-text-to-chunks",
-      "description": "Split a text string to chunks for e.g. word wrapping",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/srcagency/wrap-words#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/split-text-to-chunks@1.0.0"
         }
       ]
     },
@@ -37051,24 +36493,6 @@
       ]
     },
     {
-      "name": "tablemark",
-      "SPDXID": "SPDXRef-Package-tablemark-3.1.0",
-      "versionInfo": "3.1.0",
-      "packageFileName": "node_modules/tablemark",
-      "description": "Generate markdown tables from a list of objects or JSON data.",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/haltcase/tablemark",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/tablemark@3.1.0"
-        }
-      ]
-    },
-    {
       "name": "tailwindcss",
       "SPDXID": "SPDXRef-Package-tailwindcss-3.4.4",
       "versionInfo": "3.4.4",
@@ -38557,24 +37981,6 @@
       ]
     },
     {
-      "name": "upper-case-first",
-      "SPDXID": "SPDXRef-Package-upper-case-first-2.0.2",
-      "versionInfo": "2.0.2",
-      "packageFileName": "node_modules/upper-case-first",
-      "description": "Transforms the string with the first character in upper cased",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/blakeembrey/change-case/tree/master/packages/upper-case-first#readme",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/upper-case-first@2.0.2"
-        }
-      ]
-    },
-    {
       "name": "uri-js",
       "SPDXID": "SPDXRef-Package-uri-js-4.4.1",
       "versionInfo": "4.4.1",
@@ -38859,24 +38265,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "de5ab3e588d64d89d6e9d9436b94cb69309c4a17daaf57b8d2b99c255c020490ba996945ba3d1e0872049661b5839932b89fc60fef169f814509ccf88093df69"
-        }
-      ]
-    },
-    {
-      "name": "visit-values",
-      "SPDXID": "SPDXRef-Package-visit-values-2.0.0",
-      "versionInfo": "2.0.0",
-      "packageFileName": "node_modules/visit-values",
-      "description": "visit all the children of a javascript object",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/kessler/node-visit-values",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/visit-values@2.0.0"
         }
       ]
     },
@@ -46056,11 +45444,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-defer-to-connect-2.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-szmarczak.http-timer-5.0.1",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-babel.parser-7.24.8",
       "relatedSpdxElement": "SPDXRef-Package-types.babel__core-7.20.5",
       "relationshipType": "DEPENDENCY_OF"
@@ -47756,41 +47139,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-types.http-cache-semantics-4.0.4",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stream-6.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-http-cache-semantics-4.1.1",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-keyv-4.5.4",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-mimic-response-4.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-normalize-url-8.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-responselike-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-es-define-property-1.0.0",
       "relatedSpdxElement": "SPDXRef-Package-call-bind-1.0.7",
       "relationshipType": "DEPENDENCY_OF"
@@ -48728,11 +48076,6 @@
     {
       "spdxElementId": "SPDXRef-Package-ms-2.1.2",
       "relatedSpdxElement": "SPDXRef-Package-debug-4.3.5",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-mimic-response-3.1.0",
-      "relatedSpdxElement": "SPDXRef-Package-decompress-response-6.0.0",
       "relationshipType": "DEPENDENCY_OF"
     },
     {
@@ -51171,61 +50514,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-sindresorhus.is-5.6.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-szmarczak.http-timer-5.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-cacheable-lookup-7.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-decompress-response-6.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-form-data-encoder-2.1.4",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stream-6.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-http2-wrapper-2.2.1",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-lowercase-keys-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-p-cancelable-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-responselike-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-got-13.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-duplexer-0.1.2",
       "relatedSpdxElement": "SPDXRef-Package-gzip-size-6.0.0",
       "relationshipType": "DEPENDENCY_OF"
@@ -51498,16 +50786,6 @@
     {
       "spdxElementId": "SPDXRef-Package-sshpk-1.18.0",
       "relatedSpdxElement": "SPDXRef-Package-http-signature-1.3.6",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-quick-lru-5.1.1",
-      "relatedSpdxElement": "SPDXRef-Package-http2-wrapper-2.2.1",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-resolve-alpn-1.2.1",
-      "relatedSpdxElement": "SPDXRef-Package-http2-wrapper-2.2.1",
       "relationshipType": "DEPENDENCY_OF"
     },
     {
@@ -55106,51 +54384,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-kessler.tableify-1.0.2",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-debug-4.3.5",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-eol-0.9.1",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-got-13.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-rc-1.2.8",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-semver-7.6.2",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-tablemark-3.1.0",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-text-table-0.2.0",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-visit-values-2.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-license-report-6.5.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-enquirer-2.4.1",
       "relatedSpdxElement": "SPDXRef-Package-listr2-3.14.0",
       "relationshipType": "DEPENDENCY_OF"
@@ -56906,26 +56139,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-deep-extend-0.6.0",
-      "relatedSpdxElement": "SPDXRef-Package-rc-1.2.8",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-ini-1.3.8",
-      "relatedSpdxElement": "SPDXRef-Package-rc-1.2.8",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-minimist-1.2.8",
-      "relatedSpdxElement": "SPDXRef-Package-rc-1.2.8",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-strip-json-comments-2.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-rc-1.2.8",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-loose-envify-1.4.0",
       "relatedSpdxElement": "SPDXRef-Package-react-17.0.2",
       "relationshipType": "DEPENDENCY_OF"
@@ -57641,11 +56854,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-lowercase-keys-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-responselike-3.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-onetime-5.1.2",
       "relatedSpdxElement": "SPDXRef-Package-restore-cursor-3.1.0",
       "relationshipType": "DEPENDENCY_OF"
@@ -57913,21 +57121,6 @@
     {
       "spdxElementId": "SPDXRef-Package-ms-2.0.0",
       "relatedSpdxElement": "SPDXRef-Package-debug-2.6.9",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-no-case-3.0.4",
-      "relatedSpdxElement": "SPDXRef-Package-sentence-case-3.0.4",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-tslib-2.6.3",
-      "relatedSpdxElement": "SPDXRef-Package-sentence-case-3.0.4",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-upper-case-first-2.0.2",
-      "relatedSpdxElement": "SPDXRef-Package-sentence-case-3.0.4",
       "relationshipType": "DEPENDENCY_OF"
     },
     {
@@ -58208,16 +57401,6 @@
     {
       "spdxElementId": "SPDXRef-Package-through-2.3.8",
       "relatedSpdxElement": "SPDXRef-Package-split-0.3.3",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stdin-5.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-split-text-to-chunks-1.0.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-minimist-1.2.8",
-      "relatedSpdxElement": "SPDXRef-Package-split-text-to-chunks-1.0.0",
       "relationshipType": "DEPENDENCY_OF"
     },
     {
@@ -58896,16 +58079,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-sentence-case-3.0.4",
-      "relatedSpdxElement": "SPDXRef-Package-tablemark-3.1.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-split-text-to-chunks-1.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-tablemark-3.1.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-alloc.quick-lru-5.2.0",
       "relatedSpdxElement": "SPDXRef-Package-tailwindcss-3.4.4",
       "relationshipType": "DEPENDENCY_OF"
@@ -59378,11 +58551,6 @@
     {
       "spdxElementId": "SPDXRef-Package-picocolors-1.0.1",
       "relatedSpdxElement": "SPDXRef-Package-update-browserslist-db-1.1.0",
-      "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-tslib-2.6.3",
-      "relatedSpdxElement": "SPDXRef-Package-upper-case-first-2.0.2",
       "relationshipType": "DEPENDENCY_OF"
     },
     {
@@ -60554,176 +59722,6 @@
       "spdxElementId": "SPDXRef-Package-buffer-crc32-0.2.13",
       "relatedSpdxElement": "SPDXRef-Package-yauzl-2.10.0",
       "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-kessler.tableify-1.0.2",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-sindresorhus.is-5.6.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-szmarczak.http-timer-5.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-types.http-cache-semantics-4.0.4",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-cacheable-lookup-7.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-cacheable-request-10.2.14",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stream-6.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-normalize-url-8.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-decompress-response-6.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-mimic-response-3.1.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-deep-extend-0.6.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-defer-to-connect-2.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-eol-0.9.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-form-data-encoder-2.1.4",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stdin-5.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-got-13.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-get-stream-6.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-http-cache-semantics-4.1.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-http2-wrapper-2.2.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-license-report-6.5.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-lowercase-keys-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-mimic-response-4.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-p-cancelable-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-quick-lru-5.1.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-rc-1.2.8",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-ini-1.3.8",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-strip-json-comments-2.0.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-resolve-alpn-1.2.1",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-responselike-3.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-sentence-case-3.0.4",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-split-text-to-chunks-1.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-tablemark-3.1.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-upper-case-first-2.0.2",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-visit-values-2.0.0",
-      "relatedSpdxElement": "SPDXRef-Package-jsonforms-react-seed-0.1.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
     }
   ]
 }
