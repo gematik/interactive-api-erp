@@ -11,10 +11,6 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/taskId"
-    },
-    {
-      "type": "Control",
       "scope": "#/definitions/transactionID"
     },
     {
@@ -143,32 +139,6 @@
           "scope": "#/properties/communicationType",
           "schema": {
             "enum": ["paymentInfo"]
-          }
-        }
-      }
-    },
-    {
-      "type": "Control",
-      "scope": "#/oneOf/7/properties/supplyOptionsType",
-      "rule": {
-        "effect": "SHOW",
-        "condition": {
-          "scope": "#/properties/communicationType",
-          "schema": {
-            "enum": ["availabilityResponse"]
-          }
-        }
-      }
-    },
-    {
-      "type": "Control",
-      "scope": "#/oneOf/7/properties/changedToSupplyOptionsType",
-      "rule": {
-        "effect": "SHOW",
-        "condition": {
-          "scope": "#/properties/communicationType",
-          "schema": {
-            "enum": ["availabilityResponse"]
           }
         }
       }

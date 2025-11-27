@@ -93,7 +93,8 @@
             "const": 3
         },
         "communicationType": {
-            "enum": ["order", "text"]
+            "enum": ["order", "text"],
+            "description": "Communication type: 'order' to request a product with a chosen supply option (delivery, shipment, reservation). 'text' to send a free-form message related to the transaction."
         },
         "supplyOptionsType": {
             "enum": [

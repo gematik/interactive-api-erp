@@ -9,7 +9,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "text"
@@ -26,7 +25,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "link"
@@ -46,13 +44,12 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "reservationStatus"
                 },
                 "readyForCollection": {
-                    "$ref": "#/definitions/availabilityResponse"
+                    "$ref": "#/definitions/readyForCollection"
                 }
             },
             "required": ["readyForCollection"],
@@ -63,7 +60,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "pickUpCodeHR"
@@ -81,7 +77,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "pickUpCodeDMC"
@@ -99,7 +94,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "deliveryStatus"
@@ -121,7 +115,6 @@
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
                 "communicationType": {
                     "type": "string",
                     "const": "paymentInfo"
@@ -129,34 +122,11 @@
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "totalAmount": { "$ref": "#/definitions/money"},
+                "totalAmount": { "$ref": "#/definitions/totalAmount"},
                 "paymentMethods": { "$ref": "#/definitions/paymentMethods" }
             },
             "required": ["totalAmount", "paymentMethods"],
             "additionalProperties": false
-        },
-        {
-            "title": "availabilityResponse",
-            "properties": {
-                "version": { "$ref": "#/definitions/version" },
-                "transactionID": { "$ref": "#/definitions/transactionID" },
-                "taskId": { "$ref": "#/definitions/taskId" },
-                "communicationType": {
-                    "type": "string",
-                    "const": "availabilityResponse"
-                },
-                "supplyOptionsType": {
-                    "$ref": "#/definitions/supplyOptionsType"
-                },
-                "changedToSupplyOptionsType": {
-                    "$ref": "#/definitions/supplyOptionsType"
-                },
-                "text": {
-                    "$ref": "#/definitions/text"
-                },
-                "availabilityResponse":  { "$ref": "#/definitions/availabilityResponse" }
-            },
-            "required": ["supplyOptionsType", "availabilityResponse"]
         }
     ],
     "definitions": {
@@ -172,52 +142,39 @@
                 "pickUpCodeHR",
                 "pickUpCodeDMC",
                 "deliveryStatus",
-                "paymentInfo",
-                "availabilityResponse"
+                "paymentInfo"
             ]
         },
-        "supplyOptionsType": {
-            "enum": [
-                "reservation",
-                "shipment",
-                "delivery"
-            ]
+        "text": {
+            "type": "string",
+            "maxLength": 800
+        },
+        "url": {
+            "type": "string",
+            "maxLength": 500
         },
         "transactionID": {
             "type": "string",
             "maxLength": 50
         },
-        "taskId": {
-            "type": "string",
-            "maxLength": 50
-        },
-        "text": {
-            "type": "string",
-            "maxLength": 2000
-        },
-        "url": {
-            "type": "string",
-            "maxLength": 2000
-        },
-        "pickupCode": {
-            "type": "string",
-            "maxLength": 8,
-            "pattern": "^[a-zA-Z0-9]+$"
-        },
-        "pickupCodeDMC": {
-            "title": "DMC Content",
-            "description": "The app will convert this using utf8 encoding and write to a Data Matrix Code. This could be anything like custom JSON: `{\"custom_json\": \"payload\"}`, `BASE64==` encoded data or a simple id `abcdef-12345-sdfsdf`.",
-            "examples": ["{\"custom_json\": \"payload\"}", "BASE64=="],
-            "type": "string",
-            "maxLength": 2000
+        "readyForCollection": {
+            "enum": [
+                "immediately",
+                "sameDay",
+                "nextDay",
+                "nextDayAM",
+                "nextDayPM",
+                "unknown",
+                "notAvailable"
+            ]
         },
         "deliveryStatus": {
             "type": "string",
             "enum": [
-                "pending",
-                "inTransit",
+                "preparedWaiting",
+                "inTransport",
                 "delivered",
-                "failed"
+                "incident"
             ]
         },
         "coordinate": {
@@ -242,25 +199,9 @@
                 }
             }
         },
-        "money": {
-            "type": "object",
-            "properties": {
-                "value": {
-                    "type": "integer",
-                    "$comment": "Value in smallest currency unit (e.g. cents)"
-                },
-                "currency": {
-                    "type": "string",
-                    "minLength": 3,
-                    "maxLength": 3,
-                    "$comment": "ISO 4217 currency code"
-                }
-            },
-            "required": ["value", "currency"]
-        },
-        "datetime": {
-            "type": "number",
-            "$comment": "Unix Timestamp"
+        "totalAmount": {
+            "type": "integer",
+            "$comment": "Value in smallest currency unit (e.g. cents)"
         },
         "paymentMethods": {
             "type": "array",
@@ -283,22 +224,27 @@
             },
             "required": ["method"]
         },
-        "availabilityResponse": {
-            "enum": [
-                "immediately",
-                "sameDay",
-                "nextDay",
-                "nextDayAM",
-                "nextDayPM",
-                "unknown",
-                "notAvailable"
-            ]
+        "pickupCode": {
+            "type": "string",
+            "maxLength": 8,
+            "pattern": "^[a-zA-Z0-9]+$"
+        },
+        "pickupCodeDMC": {
+            "title": "DMC Content",
+            "description": "The app will convert this using utf8 encoding and write to a Data Matrix Code (ISO/IEC 16022:2006). This could be anything like custom JSON: `{\"custom_json\": \"payload\"}`, `BASE64==` encoded data or a simple id `abcdef-12345-sdfsdf`.",
+            "examples": ["{\"custom_json\": \"payload\"}", "BASE64=="],
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 2000
+        },
+        "datetime": {
+            "type": "number",
+            "$comment": "Unix Timestamp"
         }
     },
     "required": [
         "version",
         "communicationType",
-        "taskId",
         "transactionID"
     ],
     "version": "2"

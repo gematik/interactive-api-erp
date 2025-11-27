@@ -3,5 +3,5 @@
     "text": "Some Text to state your request",
     "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "communicationType": "deliveryStatus",
-    "deliveryStatus": "failed"
+    "deliveryStatus": "incident"
 }

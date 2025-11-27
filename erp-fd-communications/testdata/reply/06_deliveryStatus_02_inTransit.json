@@ -3,7 +3,7 @@
     "text": "Some Text to state your request",
     "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "communicationType": "deliveryStatus",
-    "deliveryStatus": "inTransit",
+    "deliveryStatus": "inTransport",
     "inTransportPosition": {
         "long": 13.387595793605172,
         "lat": 52.522529939635795

@@ -3,10 +3,7 @@
     "text": "Some Text to state your request",
     "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "communicationType": "paymentInfo",
-    "totalAmount": {
-        "value": 12530,
-        "currency": "EUR"
-    },
+    "totalAmount": 12530,
     "paymentMethods": [
         {
             "method": "cash"
