@@ -2,7 +2,7 @@
   "dispReq": {
     "01_delivery": "{\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"version\": 3,\n    \"communicationType\": \"order\",\n    \"supplyOptionsType\": \"delivery\",\n    \"phone\": \"+49555555555\",\n    \"text\": \"Need it now!\",\n    \"firstname\": \"Max\",\n    \"lastname\": \"Mustermann\",\n    \"address\": \"Musterstraße 555\",\n    \"postcode\": \"55555\",\n    \"city\": \"Musterhause\",\n    \"country\": \"DE\"\n}",
     "02_shipment": "{\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"version\": 3,\n    \"communicationType\": \"order\",\n    \"supplyOptionsType\": \"shipment\",\n    \"phone\": \"+49555555555\",\n    \"text\": \"Need it now!\",\n    \"firstname\": \"Max\",\n    \"lastname\": \"Mustermann\",\n    \"address\": \"Musterstraße 555\",\n    \"postcode\": \"55555\",\n    \"city\": \"Musterhause\",\n    \"country\": \"DE\"\n}\n",
-    "03_reservation": "{\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"version\": 3,\n    \"communicationType\": \"order\",\n    \"supplyOptionsType\": \"reservation\",\n    \"phone\": \"+49555555555\",\n    \"text\": \"Need it now!\"\n}",
+    "03_reservation": "{\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"version\": 3,\n    \"communicationType\": \"order\",\n    \"supplyOptionsType\": \"onPremise\",\n    \"phone\": \"+49555555555\",\n    \"text\": \"Need it now!\"\n}",
     "04_message": "{\n    \"version\": 3,\n    \"transactionID\": \"ABCD-EFGH-IJKL-MNOP\",\n    \"communicationType\": \"text\",\n    \"phone\": \"+49555555555\",\n    \"text\": \"Gibt es noch Traubenzucker?\"\n}"
   },
   "reply": {

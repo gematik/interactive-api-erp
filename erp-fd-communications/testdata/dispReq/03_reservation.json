@@ -2,7 +2,7 @@
     "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "version": 3,
     "communicationType": "order",
-    "supplyOptionsType": "reservation",
+    "supplyOptionsType": "onPremise",
     "phone": "+49555555555",
     "text": "Need it now!"
 }
