@@ -59,7 +59,7 @@
                     "$ref": "#/definitions/communicationType",
                     "value": "order"
                 },
-                "supplyOptionsType": { "enum": ["reservation"] },
+                "supplyOptionsType": { "enum": ["onPremise"] },
                 "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
@@ -98,7 +98,7 @@
         },
         "supplyOptionsType": {
             "enum": [
-                "reservation",
+                "onPremise",
                 "shipment",
                 "delivery"
             ]
