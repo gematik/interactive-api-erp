@@ -151,7 +151,8 @@
         },
         "url": {
             "type": "string",
-            "maxLength": 500
+            "maxLength": 500,
+            "pattern": "https://.+\\..+"
         },
         "transactionID": {
             "type": "string",
