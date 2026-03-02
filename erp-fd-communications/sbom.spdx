@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "jsonforms-react-seed@0.1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-5ca298d3-63c9-454b-b2bc-ef6ac1b8f604",
+  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-fb3745fe-d57b-4242-a368-1ad316488ded",
   "creationInfo": {
-    "created": "2026-03-02T07:41:51.423Z",
+    "created": "2026-03-02T12:58:24.946Z",
     "creators": [
       "Tool: npm/cli-10.8.2"
     ]
