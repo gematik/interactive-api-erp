@@ -52,7 +52,7 @@
           },
           {
             "type": "Control",
-            "scope": "#/definitions/mail"
+            "scope": "#/definitions/email"
           }
         ]
       },

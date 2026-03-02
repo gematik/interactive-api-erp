@@ -45,7 +45,7 @@
                 "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
-                "mail": { "$ref": "#/definitions/mail" },
+                "email": { "$ref": "#/definitions/email" },
                 "transactionID": { "$ref": "#/definitions/transactionID" }
             },
             "required": ["version", "communicationType", "firstname", "lastname", "address", "postcode", "city", "country", "phone"],
@@ -63,7 +63,7 @@
                 "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
-                "mail": { "$ref": "#/definitions/mail" },
+                "email": { "$ref": "#/definitions/email" },
                 "transactionID": { "$ref": "#/definitions/transactionID" }
             },
             "required": ["version", "communicationType", "phone"],
@@ -80,7 +80,7 @@
                 "hint": { "$ref": "#/definitions/hint" },
                 "text": { "$ref": "#/definitions/text" },
                 "phone": { "$ref": "#/definitions/phone" },
-                "mail": { "$ref": "#/definitions/mail" },
+                "email": { "$ref": "#/definitions/email" },
                 "transactionID": { "$ref": "#/definitions/transactionID" }
             },
             "required": ["version", "communicationType", "text", "transactionID"],
@@ -121,7 +121,7 @@
             "maxLength": 32,
             "description": "Telefonnummer E-164 Format, jedoch anstelle des „+“ mit „00“ / rein nummerisch."
         },
-        "mail": {
+        "email": {
             "type": "string",
             "pattern": "^.+@.{1,}\\..{1,}$"
         }
