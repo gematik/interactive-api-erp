@@ -67,9 +67,9 @@
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "pickupCode": { "$ref": "#/definitions/pickupCode" }
+                "pickupCodeHR": { "$ref": "#/definitions/pickupCodeHR" }
             },
-            "required": ["pickupCode"],
+            "required": ["pickupCodeHR"],
             "additionalProperties": false
         },
         {
@@ -225,7 +225,7 @@
             },
             "required": ["method"]
         },
-        "pickupCode": {
+        "pickupCodeHR": {
             "type": "string",
             "maxLength": 8,
             "pattern": "^[a-zA-Z0-9]+$"
