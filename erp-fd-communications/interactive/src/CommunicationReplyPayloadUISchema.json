@@ -21,7 +21,7 @@
         "condition": {
           "scope": "#/properties/communicationType",
           "schema": {
-            "enum": ["text", "link", "pickupCode", "pickUpCodeHR", "pickUpCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
+            "enum": ["text", "link", "pickUpCodeHR", "pickUpCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
           }
         }
       }
@@ -54,7 +54,7 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/pickupCode",
+      "scope": "#/definitions/pickupCodeHR",
       "rule": {
         "effect": "SHOW",
         "condition": {
