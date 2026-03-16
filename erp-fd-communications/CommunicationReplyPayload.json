@@ -67,9 +67,9 @@
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "pickupCodeHR": { "$ref": "#/definitions/pickupCodeHR" }
+                "pickUpCodeHR": { "$ref": "#/definitions/pickUpCodeHR" }
             },
-            "required": ["pickupCodeHR"],
+            "required": ["pickUpCodeHR"],
             "additionalProperties": false
         },
         {
@@ -84,9 +84,9 @@
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "pickupCodeDMC": { "$ref": "#/definitions/pickupCodeDMC" }
+                "pickUpCodeDMC": { "$ref": "#/definitions/pickUpCodeDMC" }
             },
-            "required": ["pickupCodeDMC"],
+            "required": ["pickUpCodeDMC"],
             "additionalProperties": false
         },
         {
@@ -225,12 +225,12 @@
             },
             "required": ["method"]
         },
-        "pickupCodeHR": {
+        "pickUpCodeHR": {
             "type": "string",
             "maxLength": 8,
             "pattern": "^[a-zA-Z0-9]+$"
         },
-        "pickupCodeDMC": {
+        "pickUpCodeDMC": {
             "title": "DMC Content",
             "description": "The app will convert this using utf8 encoding and write to a Data Matrix Code (ISO/IEC 16022:2006). This could be anything like custom JSON: `{\"custom_json\": \"payload\"}`, `BASE64==` encoded data or a simple id `abcdef-12345-sdfsdf`.",
             "examples": ["{\"custom_json\": \"payload\"}", "BASE64=="],

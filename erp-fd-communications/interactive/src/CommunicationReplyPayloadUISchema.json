@@ -54,7 +54,7 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/pickupCodeHR",
+      "scope": "#/definitions/pickUpCodeHR",
       "rule": {
         "effect": "SHOW",
         "condition": {
@@ -67,7 +67,7 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/pickupCodeDMC",
+      "scope": "#/definitions/pickUpCodeDMC",
       "rule": {
         "effect": "SHOW",
         "condition": {

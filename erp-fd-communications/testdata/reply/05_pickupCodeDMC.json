@@ -3,5 +3,5 @@
     "text": "Some Text to state your request",
     "transactionID": "ABCD-EFGH-IJKL-MNOP",
     "communicationType": "pickUpCodeDMC",
-    "pickupCodeDMC": "MACHINE_READABLE_CONTENT_OR_STRUCTURED_DATA"
+    "pickUpCodeDMC": "MACHINE_READABLE_CONTENT_OR_STRUCTURED_DATA"
 }
