@@ -56,13 +56,13 @@
             "additionalProperties": false
         },
         {
-            "title": "pickUpCodeHR",
+            "title": "pickupCodeHR",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
                 "communicationType": {
                     "type": "string",
-                    "const": "pickUpCodeHR"
+                    "const": "pickupCodeHR"
                 },
                 "text": {
                     "$ref": "#/definitions/text"
@@ -73,13 +73,13 @@
             "additionalProperties": false
         },
         {
-            "title": "pickUpCodeDMC",
+            "title": "pickupCodeDMC",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
                 "communicationType": {
                     "type": "string",
-                    "const": "pickUpCodeDMC"
+                    "const": "pickupCodeDMC"
                 },
                 "text": {
                     "$ref": "#/definitions/text"
@@ -139,8 +139,8 @@
                 "text",
                 "link",
                 "reservationStatus",
-                "pickUpCodeHR",
-                "pickUpCodeDMC",
+                "pickupCodeHR",
+                "pickupCodeDMC",
                 "deliveryStatus",
                 "paymentInfo"
             ]
