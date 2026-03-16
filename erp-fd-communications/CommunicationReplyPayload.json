@@ -56,37 +56,37 @@
             "additionalProperties": false
         },
         {
-            "title": "pickUpCodeHR",
+            "title": "pickupCodeHR",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
                 "communicationType": {
                     "type": "string",
-                    "const": "pickUpCodeHR"
+                    "const": "pickupCodeHR"
                 },
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "pickUpCodeHR": { "$ref": "#/definitions/pickUpCodeHR" }
+                "pickupCodeHR": { "$ref": "#/definitions/pickupCodeHR" }
             },
-            "required": ["pickUpCodeHR"],
+            "required": ["pickupCodeHR"],
             "additionalProperties": false
         },
         {
-            "title": "pickUpCodeDMC",
+            "title": "pickupCodeDMC",
             "properties": {
                 "version": { "$ref": "#/definitions/version" },
                 "transactionID": { "$ref": "#/definitions/transactionID" },
                 "communicationType": {
                     "type": "string",
-                    "const": "pickUpCodeDMC"
+                    "const": "pickupCodeDMC"
                 },
                 "text": {
                     "$ref": "#/definitions/text"
                 },
-                "pickUpCodeDMC": { "$ref": "#/definitions/pickUpCodeDMC" }
+                "pickupCodeDMC": { "$ref": "#/definitions/pickupCodeDMC" }
             },
-            "required": ["pickUpCodeDMC"],
+            "required": ["pickupCodeDMC"],
             "additionalProperties": false
         },
         {
@@ -139,8 +139,8 @@
                 "text",
                 "link",
                 "reservationStatus",
-                "pickUpCodeHR",
-                "pickUpCodeDMC",
+                "pickupCodeHR",
+                "pickupCodeDMC",
                 "deliveryStatus",
                 "paymentInfo"
             ]
@@ -225,12 +225,12 @@
             },
             "required": ["method"]
         },
-        "pickUpCodeHR": {
+        "pickupCodeHR": {
             "type": "string",
             "maxLength": 8,
             "pattern": "^[a-zA-Z0-9]+$"
         },
-        "pickUpCodeDMC": {
+        "pickupCodeDMC": {
             "title": "DMC Content",
             "description": "The app will convert this using utf8 encoding and write to a Data Matrix Code (ISO/IEC 16022:2006). This could be anything like custom JSON: `{\"custom_json\": \"payload\"}`, `BASE64==` encoded data or a simple id `abcdef-12345-sdfsdf`.",
             "examples": ["{\"custom_json\": \"payload\"}", "BASE64=="],

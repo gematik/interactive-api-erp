@@ -21,7 +21,7 @@
         "condition": {
           "scope": "#/properties/communicationType",
           "schema": {
-            "enum": ["text", "link", "pickUpCodeHR", "pickUpCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
+            "enum": ["text", "link", "pickupCodeHR", "pickupCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
           }
         }
       }
@@ -54,26 +54,26 @@
     },
     {
       "type": "Control",
-      "scope": "#/definitions/pickUpCodeHR",
+      "scope": "#/definitions/pickupCodeHR",
       "rule": {
         "effect": "SHOW",
         "condition": {
           "scope": "#/properties/communicationType",
           "schema": {
-            "enum": ["pickUpCodeHR"]
+            "enum": ["pickupCodeHR"]
           }
         }
       }
     },
     {
       "type": "Control",
-      "scope": "#/definitions/pickUpCodeDMC",
+      "scope": "#/definitions/pickupCodeDMC",
       "rule": {
         "effect": "SHOW",
         "condition": {
           "scope": "#/properties/communicationType",
           "schema": {
-            "enum": ["pickUpCodeDMC"]
+            "enum": ["pickupCodeDMC"]
           }
         }
       }
