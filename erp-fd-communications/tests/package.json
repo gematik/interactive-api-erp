@@ -1,0 +1,12 @@
+{
+  "name": "erp-fd-communications-schema-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validation tests comparing the Communication payload JSON schemas against gemSpec_DM_eRp 2.7.1 / 2.7.2.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "ajv": "^6.12.6"
+  }
+}
