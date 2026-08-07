@@ -1,0 +1,59 @@
+name: Deploy interactive to GitHub Pages
+
+# Publishes the interactive JSON Forms app (erp-fd-communications/interactive)
+# to the `gh-pages` branch via `npm run deploy` (gh-pages). Runs automatically
+# on pushes to main that touch the interactive folder, and can also be started
+# manually from the Actions tab.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'erp-fd-communications/interactive/**'
+      - '.github/workflows/deploy-interactive.yml'
+  workflow_dispatch:
+
+# Allow the job to push to the gh-pages branch using the built-in GITHUB_TOKEN.
+permissions:
+  contents: write
+
+# Never run two deployments at once; cancel an in-progress one if a newer
+# commit arrives.
+concurrency:
+  group: deploy-interactive
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: erp-fd-communications/interactive
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: erp-fd-communications/interactive/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure git identity
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Build and deploy to gh-pages
+        env:
+          # GitHub runners set CI=true, which makes Create React App treat
+          # build warnings as errors. Deploy with CI=false to mirror a local
+          # `npm run deploy` and avoid failing on pre-existing lint warnings.
+          CI: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy -- --repo "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"

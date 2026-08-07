@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "jsonforms-react-seed@0.1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-47e36c42-cf6c-4143-a0d1-1edd3086b250",
+  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-d15c3854-4b25-414d-87fe-329c9e3f0dd4",
   "creationInfo": {
-    "created": "2026-02-23T23:51:45.361Z",
+    "created": "2026-08-07T06:41:48.818Z",
     "creators": [
       "Tool: npm/cli-10.8.2"
     ]
@@ -12593,11 +12593,11 @@
     },
     {
       "name": "caniuse-lite",
-      "SPDXID": "SPDXRef-Package-caniuse-lite-1.0.30001642",
-      "versionInfo": "1.0.30001642",
+      "SPDXID": "SPDXRef-Package-caniuse-lite-1.0.30001777",
+      "versionInfo": "1.0.30001777",
       "packageFileName": "node_modules/caniuse-lite",
       "description": "A smaller version of caniuse-db, with only the essentials!",
-      "downloadLocation": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001642.tgz",
+      "downloadLocation": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001777.tgz",
       "filesAnalyzed": false,
       "homepage": "https://github.com/browserslist/caniuse-lite#readme",
       "licenseDeclared": "CC-BY-4.0",
@@ -12605,13 +12605,13 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:npm/caniuse-lite@1.0.30001642"
+          "referenceLocator": "pkg:npm/caniuse-lite@1.0.30001777"
         }
       ],
       "checksums": [
         {
           "algorithm": "SHA512",
-          "checksumValue": "dd74340e84602e28d7244acb4a5f9b2e727e12de0aa95d4f63a24904600596c36ccf7d737802277327997cb09a6c72bf8ed4a1fbaef544cf583257718d43d9b4"
+          "checksumValue": "b6637e7c9c6ba0f9dd0bbe1e7c2769d768fed2b934447c15e49c1ad7359a155cb0d99c40b8f786f198160b75b3eee4a34f7a8c450e571d9e023a0426b0230901"
         }
       ]
     },
@@ -40264,7 +40264,7 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001642",
+      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001777",
       "relatedSpdxElement": "SPDXRef-Package-browserslist-4.23.2",
       "relationshipType": "DEPENDENCY_OF"
     },
@@ -46519,7 +46519,7 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001642",
+      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001777",
       "relatedSpdxElement": "SPDXRef-Package-autoprefixer-10.4.19",
       "relationshipType": "DEPENDENCY_OF"
     },
@@ -47104,7 +47104,7 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001642",
+      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001777",
       "relatedSpdxElement": "SPDXRef-Package-browserslist-4.23.0",
       "relationshipType": "DEPENDENCY_OF"
     },
@@ -47179,7 +47179,7 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001642",
+      "spdxElementId": "SPDXRef-Package-caniuse-lite-1.0.30001777",
       "relatedSpdxElement": "SPDXRef-Package-caniuse-api-3.0.0",
       "relationshipType": "DEPENDENCY_OF"
     },
