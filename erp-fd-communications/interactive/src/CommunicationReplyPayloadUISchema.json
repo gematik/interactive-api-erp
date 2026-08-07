@@ -21,7 +21,7 @@
         "condition": {
           "scope": "#/properties/communicationType",
           "schema": {
-            "enum": ["text", "link", "pickupCodeHR", "pickupCodeDMC", "deliveryStatus", "paymentInfo", "availabilityResponse"]
+            "enum": ["text", "link", "pickupCodeHR", "pickupCodeDMC", "deliveryStatus", "paymentInfo"]
           }
         }
       }

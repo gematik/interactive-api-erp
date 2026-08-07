@@ -16,6 +16,10 @@
           {
             "type": "Control",
             "scope": "#/definitions/supplyOptionsType"
+          },
+          {
+            "type": "Control",
+            "scope": "#/definitions/hint"
           }
         ],
         "rule": {
@@ -62,42 +66,29 @@
         "elements": [
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/firstname"
+            "scope": "#/definitions/firstname"
           },
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/lastname"
+            "scope": "#/definitions/lastname"
           },
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/address"
+            "scope": "#/definitions/address"
           },
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/postcode"
+            "scope": "#/definitions/postcode"
           },
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/city"
+            "scope": "#/definitions/city"
           },
           {
             "type": "Control",
-            "scope": "#/oneOf/0/properties/country"
-          },
-          {
-            "type": "Control",
-            "scope": "#/oneOf/0/properties/hint"
+            "scope": "#/definitions/country"
           }
-        ],
-        "rule": {
-          "effect": "SHOW",
-          "condition": {
-            "scope": "#/properties/supplyOptionsType",
-            "schema": {
-              "enum": ["delivery", "shipment"]
-            }
-          }
-        }
+        ]
       }
     ]
   }
