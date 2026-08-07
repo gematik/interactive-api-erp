@@ -3,9 +3,9 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "jsonforms-react-seed@0.1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-8ed5d362-32a6-4532-87db-22f26d2a0e4e",
+  "documentNamespace": "http://spdx.org/spdxdocs/jsonforms-react-seed-0.1.0-8e7e20ad-5271-40ce-8a14-5f5d45b28bd3",
   "creationInfo": {
-    "created": "2026-08-07T06:04:31.443Z",
+    "created": "2026-08-07T06:49:53.274Z",
     "creators": [
       "Tool: npm/cli-10.8.2"
     ]
@@ -18993,30 +18993,6 @@
         {
           "algorithm": "SHA512",
           "checksumValue": "38ed291f694ae9ad2166701d6aee48b731cf23aa5496f23b8cc567c54411b70e28c05db093c94e49a6ed1830933f81a0ae0d8c6c69d63bd5fc2b5b78f9f18c0f"
-        }
-      ]
-    },
-    {
-      "name": "fsevents",
-      "SPDXID": "SPDXRef-Package-fsevents-2.3.3",
-      "versionInfo": "2.3.3",
-      "packageFileName": "node_modules/fsevents",
-      "description": "Native Access to MacOS FSEvents",
-      "downloadLocation": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
-      "filesAnalyzed": false,
-      "homepage": "https://github.com/fsevents/fsevents",
-      "licenseDeclared": "MIT",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:npm/fsevents@2.3.3"
-        }
-      ],
-      "checksums": [
-        {
-          "algorithm": "SHA512",
-          "checksumValue": "e71a037d7f9f2fb7da0139da82658fa5b16dc21fd1efb5a630caaa1c64bae42defbc1d181eb805f81d58999df8e35b4c8f99fade4d36d765cda09c339617df43"
         }
       ]
     },
@@ -47239,11 +47215,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-fsevents-2.3.3",
-      "relatedSpdxElement": "SPDXRef-Package-chokidar-3.6.0",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-is-glob-4.0.3",
       "relatedSpdxElement": "SPDXRef-Package-glob-parent-5.1.2",
       "relationshipType": "DEPENDENCY_OF"
@@ -52194,11 +52165,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-fsevents-2.3.3",
-      "relatedSpdxElement": "SPDXRef-Package-jest-haste-map-27.5.1",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-types.istanbul-lib-coverage-2.0.6",
       "relatedSpdxElement": "SPDXRef-Package-jest.types-27.5.1",
       "relationshipType": "DEPENDENCY_OF"
@@ -56589,11 +56555,6 @@
       "relationshipType": "DEPENDENCY_OF"
     },
     {
-      "spdxElementId": "SPDXRef-Package-fsevents-2.3.3",
-      "relatedSpdxElement": "SPDXRef-Package-react-scripts-5.0.1",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
-    },
-    {
       "spdxElementId": "SPDXRef-Package-graceful-fs-4.2.11",
       "relatedSpdxElement": "SPDXRef-Package-fs-extra-10.1.0",
       "relationshipType": "DEPENDENCY_OF"
@@ -56867,11 +56828,6 @@
       "spdxElementId": "SPDXRef-Package-glob-7.2.3",
       "relatedSpdxElement": "SPDXRef-Package-rimraf-3.0.2",
       "relationshipType": "DEPENDENCY_OF"
-    },
-    {
-      "spdxElementId": "SPDXRef-Package-fsevents-2.3.3",
-      "relatedSpdxElement": "SPDXRef-Package-rollup-2.79.1",
-      "relationshipType": "OPTIONAL_DEPENDENCY_OF"
     },
     {
       "spdxElementId": "SPDXRef-Package-rollup-2.79.1",
