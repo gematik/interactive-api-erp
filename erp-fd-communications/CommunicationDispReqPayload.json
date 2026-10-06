@@ -140,7 +140,7 @@
         },
         "phone": {
             "type": "string",
-            "pattern": "^(\\+|00)[0-9]+$",
+            "pattern": "^00[0-9]+$",
             "maxLength": 32,
             "description": "Telefonnummer E-164 Format, jedoch anstelle des „+“ mit „00“ / rein nummerisch."
         },
