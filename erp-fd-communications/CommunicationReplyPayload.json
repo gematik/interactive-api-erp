@@ -189,7 +189,12 @@
                 "long": {
                     "type": "number"
                 }
-            }
+            },
+            "required": [
+                "lat",
+                "long"
+            ],
+            "additionalProperties": false
         },
         "timeframe": {
             "type": "object",
@@ -200,7 +205,8 @@
                 "to": {
                     "$ref": "#/definitions/datetime"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "totalAmount": {
             "type": "integer",
