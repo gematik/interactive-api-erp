@@ -128,7 +128,9 @@
         },
         "transactionID": {
             "type": "string",
-            "maxLength": 50
+            "format": "uuid",
+            "minLength": 36,
+            "maxLength": 36
         },
         "hint": {
             "type": "string",
