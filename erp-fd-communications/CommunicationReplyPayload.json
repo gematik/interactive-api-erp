@@ -147,7 +147,7 @@
         },
         "text": {
             "type": "string",
-            "maxLength": 800
+            "maxLength": 2000
         },
         "url": {
             "type": "string",
