@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CommunicationReplyPayload",
     "title": "Payload of CommunicationReplyPayload",
+    "description": "Schema Version 1.1",
     "type": "object",
     "oneOf": [
         {
@@ -189,7 +190,12 @@
                 "long": {
                     "type": "number"
                 }
-            }
+            },
+            "required": [
+                "lat",
+                "long"
+            ],
+            "additionalProperties": false
         },
         "timeframe": {
             "type": "object",
@@ -200,7 +206,8 @@
                 "to": {
                     "$ref": "#/definitions/datetime"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "totalAmount": {
             "type": "integer",
