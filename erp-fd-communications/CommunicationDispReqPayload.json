@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "CommunicationDispReqPayload",
     "title": "Payload of CommunicationDispReq",
+    "description": "Schema Version 1.1",
     "type": "object",
     "oneOf": [
         {
@@ -99,10 +100,12 @@
         },
         "firstname": {
             "type": "string",
+            "minLength": 1,
             "maxLength": 45
         },
         "lastname": {
             "type": "string",
+            "minLength": 1,
             "maxLength": 45
         },
         "address": {
