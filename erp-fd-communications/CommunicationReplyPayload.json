@@ -147,7 +147,7 @@
         },
         "text": {
             "type": "string",
-            "maxLength": 800
+            "maxLength": 2000
         },
         "url": {
             "type": "string",
@@ -156,7 +156,9 @@
         },
         "transactionID": {
             "type": "string",
-            "maxLength": 50
+            "format": "uuid",
+            "minLength": 36,
+            "maxLength": 36
         },
         "readyForCollection": {
             "enum": [
@@ -187,7 +189,12 @@
                 "long": {
                     "type": "number"
                 }
-            }
+            },
+            "required": [
+                "lat",
+                "long"
+            ],
+            "additionalProperties": false
         },
         "timeframe": {
             "type": "object",
@@ -198,7 +205,8 @@
                 "to": {
                     "$ref": "#/definitions/datetime"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "totalAmount": {
             "type": "integer",

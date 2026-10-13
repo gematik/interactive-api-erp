@@ -99,10 +99,12 @@
         },
         "firstname": {
             "type": "string",
+            "minLength": 2,
             "maxLength": 45
         },
         "lastname": {
             "type": "string",
+            "minLength": 2,
             "maxLength": 45
         },
         "address": {
@@ -128,7 +130,9 @@
         },
         "transactionID": {
             "type": "string",
-            "maxLength": 50
+            "format": "uuid",
+            "minLength": 36,
+            "maxLength": 36
         },
         "hint": {
             "type": "string",
