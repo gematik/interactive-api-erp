@@ -57,7 +57,7 @@ Für weitere Beispiele oder ausführliche Dokumentation verweisen wir auf die Un
 
 ## License
 
-Copyright 2024-2025 gematik GmbH
+Copyright 2024-2026 gematik GmbH
 
 Apache License, Version 2.0
 
