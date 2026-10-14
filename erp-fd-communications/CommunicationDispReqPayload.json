@@ -99,12 +99,10 @@
         },
         "firstname": {
             "type": "string",
-            "minLength": 2,
             "maxLength": 45
         },
         "lastname": {
             "type": "string",
-            "minLength": 2,
             "maxLength": 45
         },
         "address": {
